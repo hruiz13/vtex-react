@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.item{
+    width: 180px;
+    margin-right: 18px;
+    text-align: center;
+}
+
+.icn{
+    background: url(https://cosonyb2c.vteximg.com.br/arquivos/icn.png) 0 0;
+}
+.howtobuy{
+    margin: auto;
+    display: block;
+    background-position: -131px -655px;
+    width: 65px;
+    height: 65px;
+}
+
+.title{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 13px;
+    color: #F75229;
+}
+.text{
+    margin-top: 13px;
+    color:#83838F;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.payin{
+    margin: auto;
+    display: block;
+    background-position: -305px -731px;
+    width: 65px;
+    height: 65px;
+}
+
+.cocards{
+    display: inline-block;
+    width: 180px;
+    height: 128px;
+    background-image: url(https://cosonyb2c.vteximg.com.br/arquivos/payments2.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    float: none;
+    margin-top: 13px;
+}
+
+.shipping{
+    margin: auto;
+    display: block;
+    background-position: -0px -730px;
+    width: 75px;
+    height: 65px;
+}
+.link{
+    text-decoration: none;
+    color: #4572EC;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.buyrisk{
+    margin: auto;
+    display: block;
+    background-position: -80px -730px;
+    width: 65px;
+    height: 65px;
+}
+.warranty{
+    margin: auto;
+    display: block;
+    background-position: -350px -655px;
+    width: 50px;
+    height: 65px;
+}
+.secure{
+    margin: auto;
+    display: block;
+    background-position: -154px -730px;
+    width: 65px;
+    height: 65px;
+}

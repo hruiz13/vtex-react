@@ -1,9 +1,5 @@
 declare module '*.css' {
-  type Styles = {
-    [selector: string]: string
-  }
-
-  const styles: Styles
-
-  export default styles
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const css: any
+  export default css
 }

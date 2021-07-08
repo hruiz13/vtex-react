@@ -1,0 +1,30 @@
+{
+    "btn-sony": {
+        "component": "SiteSony"
+    },
+    "btn-dots": {
+        "component": "DotsIcon"
+    },
+    "icon-quest": {
+        "component": "HelpIcon"
+    },
+    "icon-next": {
+        "component": "NextIcon"
+    },
+    "dots-menu": {
+        "component": "DotsMenu"
+    },
+    "shelf-container": {
+        "component": "ShelfContainer",
+        "composition": "children"
+    },
+    "before-footer": {
+        "component": "Informacion"
+    },
+    "order-by": {
+        "component": "OrderBy"
+    },
+    "order-by.hruiz": {
+        "component": "OrderByFlexible"
+    }
+}

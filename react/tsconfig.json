@@ -2,10 +2,24 @@
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
     "noEmitOnError": false,
-    "lib": ["dom"],
+    "lib": [
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017"
   },
-  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts",
+    "SiteSony.js",
+    "NextIcon.js",
+    "SiteSony.js",
+    "NextIcon.js",
+    "Informacion.js",
+    "HelpIcon.js",
+    "DotsMenu.js",
+    "DotsIcon.js"
+  ]
 }

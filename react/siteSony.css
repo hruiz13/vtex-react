@@ -1,0 +1,62 @@
+.sonySiteBtn{
+    align-self: center;
+    border: none;
+    font-size: 12px;
+    width: 85px !important;
+    margin-left: 10px;
+    color: white;
+    background-color: #30343D;
+    height: 36px;
+    cursor: pointer;
+}
+.sonySiteBtn:hover{
+    background-color: #4572ED;
+}
+
+.sonySiteLink{
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.dotsBtn{
+    height: 36px;
+    align-self: center;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 36px !important;
+}
+.dotsBtn:hover{
+    background-color: #4572ED;
+}
+
+.helpIcons{
+    height: 18px;
+}
+
+.nextIcons{
+    color: #4572ED;
+}
+
+.dotsCol{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+color: #2F353D;
+}
+
+.dotsText{
+    margin-left: 10px;
+    line-height: 36px;
+}
+
+.dotsContainer{
+    padding: 10px 20px;
+}
+
+.dotsLink{
+    text-decoration: none;
+    color: #2F353D;
+}
