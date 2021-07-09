@@ -14,7 +14,7 @@ const SelectionListItemS = ({ option, onItemClick, selected }) => {
         setQuery({ order: option.value, page: undefined })
     }
 
-    const highlight = selected ? 'bg-blue white b' : 'hover-bg-blue bg-base hover-o-80 hover-white'
+    const highlight = selected ? 'bg-blue white b' : 'hover-bg-blue bg-base hover-o-80 hover-white hover-b'
 
     return (
         <div
@@ -22,7 +22,7 @@ const SelectionListItemS = ({ option, onItemClick, selected }) => {
                 handles.textList,
                 highlight,
                 applyModifiers(handles.orderByOptionItem, selected ? 'selected' : ''),
-                ' f6 ttu ml-auto db no-underline pointer tl bn pv4 ph5 right-0-ns  w-100'
+                ' f6 ttu ml-auto db no-underline pointer tl bn pv4 ph4 right-0-ns  w-100'
             )}
             key={option.value}
             onClick={handleOptionClick}

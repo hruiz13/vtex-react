@@ -9,7 +9,6 @@ import { IconCaret } from 'vtex.store-icons'
 import { useDevice } from 'vtex.device-detector'
 import { useCssHandles } from 'vtex.css-handles'
 
-import SelectionListItem from './SelectionListItem'
 import useOutsideClick from '../hooks/useOutsideClick'
 import styles from '../searchResult.css'
 import SelectionListItemS from './SelectionListItemsS'
@@ -35,29 +34,13 @@ const SelectionListOrderBy = ({
 
   const orderByRef = useRef(null)
 
-  const handleDropdownBtClick = useCallback(
-    () => setShowDropdown(!showDropdown),
-    [showDropdown]
-  )
-
   const handleOutsideClick = useCallback(() => setShowDropdown(false), [])
 
   useOutsideClick(orderByRef, handleOutsideClick, showDropdown)
 
   const { isMobile } = useDevice()
 
-  const renderOptions = (orderByOption) => {
-    return options.map((option) => {
-      return (
-        <SelectionListItem
-          key={option.value}
-          onItemClick={handleOutsideClick}
-          option={option}
-          selected={option.value === orderByOption}
-        />
-      )
-    })
-  }
+
 
   const renderOptions2 = (orderByOption) => {
     return options.map((option) => {
@@ -76,24 +59,6 @@ const SelectionListOrderBy = ({
   }
 
   const sortByMessage = formatIOMessage({ id: message, intl })
-
-  const getOptionTitle = useCallback(
-    (option) => {
-      const selectedOption = find(propEq('value', option), options)
-
-      return selectedOption ? selectedOption.label : ''
-    },
-    [options]
-  )
-
-  const btClass = classNames(
-    handles.orderByButton,
-    'ph3 pv5 mv0 pointer flex items-center justify-end bg-base c-on-base t-action--small bt br bl bb-0 br2 br--top bw1 w-100 outline-0',
-    {
-      'b--muted-4': showDropdown && isMobile,
-      'b--transparent pl1': !showDropdown,
-    }
-  )
 
   const contentClass = classNames(
     styles.orderByOptionsContainer,
