@@ -1,5 +1,6 @@
 {
   "admin/test": "teste",
   "store/test": "teste",
-  "store/ordenation.relevance": "Destacados"
+  "editor.countdown.wrapper.id": "Wrapper id",
+  "editor.countdown.wrapper.id.description": "Asignar un id a un elemento"
 }

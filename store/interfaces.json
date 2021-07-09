@@ -26,5 +26,9 @@
     },
     "order-by.hruiz": {
         "component": "OrderByFlexible"
+    },
+    "wrapperId": {
+        "component": "WrapperAnchor",
+        "composition": "children"
     }
 }
