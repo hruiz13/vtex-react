@@ -1,22 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
- * Wrapper Component to assign an id and do anchors.
+ * Wrapper Component to assign an id.
  * component made by hruiz
  */
 
 
-// interface Props {
-//     wrapperId?: string
-//     children?: React.ReactNode
-// }
+interface Props {
+    wrapperId?: string
+    children?: React.ReactNode
+}
 
-const WrapperLink = (props) => {
-    const { wrapperId = "nada", children } = props
+const WrapperLink = (props: Props) => {
+    const { wrapperId = "empty", children } = props
 
-    return (
-        <div id={wrapperId}>{children}</div>
-    )
+    if (wrapperId === "empty") {
+        return (<div>{children}</div>)
+    } else {
+        return (<div id={wrapperId}>{children}</div>)
+    }
 }
 
 WrapperLink.schema = {
@@ -32,5 +35,8 @@ WrapperLink.schema = {
     },
 }
 
+WrapperLink.propTypes = {
+    wrapperId: PropTypes.string
+}
 
 export default WrapperLink

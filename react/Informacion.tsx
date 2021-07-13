@@ -1,4 +1,5 @@
 import React from 'react'
+import type { FC } from 'react'
 import { useCssHandles } from 'vtex.css-handles';
 import "./informacion.css";
 
@@ -17,8 +18,8 @@ const CSS_HANDLES = [
     'warranty',
     'secure']
 
-const Informacion = () => {
-    const handles = useCssHandles(CSS_HANDLES)
+const Informacion: FC = () => {
+    const handles: any = useCssHandles(CSS_HANDLES)
 
     return (
         <div>
